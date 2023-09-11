@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    /* font-weight: bold; */
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    width: 100%;
+    height: 70px;
+    background-color: #2C3E50;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.menu-bar{
+    width: 1200px;
+    height: 70px;
+    margin: auto;
+    display: flex;
+}
+.brand-logo{
+    width: 900px;
+    height: 100%;
+    color: #fff;
+    line-height: 70px;
+    font-size: 25px;
+    cursor: pointer;
+}
+.navbar .navbar-nav{
+    width: 300px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar-nav .nav-item{
+    list-style-type: none;
+}
+.navbar-nav .nav-item .nav-link{
+    text-decoration: none;
+    line-height: 70px;
+    color: #fff;
+    display: block;
+    transition: 0.5s all;
+}
+.navbar-nav .nav-item .nav-link:hover{
+    color: #1ABC9C;
+}
+/* === end css header */
+.herobanner{
+    width: 100%;
+    height: 600px;
+    background-color: #1ABC9C;
+}
+.sub-hero{
+    width: 900px;
+    height: 100%;
+    margin: auto;
+}
+.sub-hero img{
+    width: 250px;
+    height: auto;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.hero-title{
+    position: absolute;
+    top: 67%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.hero-title h1{
+    font-size: 60px;
+    font-weight: bold;
+    color: #fff;
+}
+.line{
+    width: 300px;
+    height: 53px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.un1,.un2{
+    width: 120px;
+    height: 4px;
+    background-color: #fff;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.fa-star{
+    margin-top: 10px;
+    color: #fff;
+    font-size: 20px;
+}
+.hero-title h2{
+    color: #fff;
+    text-align: center;
+}
+main{
+    width: 100%;
+    height: 850px;
+}
+.portfolio h1{
+    width: 100%;
+    height: 90px;
+    color: #2C3E50;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 40px;
+    font-size: 50px;
+}
+.portfolio 
+.line{
+    width: 300px;
+    height: 53px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.un1,.un2{
+    width: 120px;
+    height: 4px;
+    background-color: #2C3E50;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.fa-star{
+    margin-top: 10px;
+    color: #2C3E50;
+    font-size: 20px;
+}
+.container{
+    width: 1200px;
+    height: 600px;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.card1{
+    width: 385px;
+    height: 300px;
+    position: relative;
+    background-image: url(./assets/img/portfolio/cabin.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+.card1 .overlay{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #33ffd6cd;
+    opacity: 0;
+    transition: 0.3;
+    border-radius: 10px;
+}
+.card1:hover .overlay{
+    opacity: 1;
+    cursor: pointer;
+}
+.fa-plus{
+    color: #fff;
+    font-size: 50px;
+}
+.card1:nth-child(2){
+    background-image: url(./assets/img/portfolio/cake.png);
+}
+.card1:nth-child(3){
+    background-image: url(./assets/img/portfolio/circus.png);
+}
+.card1:nth-child(4){
+    background-image: url(./assets/img/portfolio/game.png);
+}
+.card1:nth-child(5){
+    background-image: url(./assets/img/portfolio/safe.png);
+}
+.card1:nth-child(6){
+    background-image: url(./assets/img/portfolio/submarine.png);
+}
+
+.content{
+    width: 100%;
+    height: 500px;
+    background-color: #1ABC9C;
+}
+.content h1{
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
+    padding-top: 40px;
+}
+.content .para{
+    width: 800px;
+    height: 350px;
+    margin: auto;
+} 
+.para p{
+    color: #fff;
+    column-count: 2;
+    column-gap: 35px;
+    text-align: justify;
+    line-height: 40px;
+    font-size: 18px;
+}
+button{
+    padding: 17px 15px;
+    margin: auto;
+    margin: 20px 300px;
+    border-radius: 8px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    font-size: 16px;
+}
+.fa-download{
+    margin-right: 10px;
+}
+.para a{
+    text-decoration: none;
+    color: #fff;
+}
+button:hover a{
+    color: black;
+}
+.contact{
+    width: 1200px;
+    height: 700px;
+    margin: auto;
+}
+.contact h1{
+    font-size: 50px;
+    text-align: center;
+    color: #671515;
+    padding-top: 60px;
+}
+form{
+    width: 900px;
+    height: 60px;
+    margin: auto;
+}
+form .name{
+    position: relative;
+    margin: 50px 0;
+    border: 2px solid gray;
+}
+.name input{
+    width: 100%;
+    height: 60px;
+    padding: 0 8px;
+    font-size: 22px;
+}
+.name label{
+    position: absolute;
+    top: 10%;
+    left: 8px;
+}
+footer{
+    width: 100%;
+    height: 600px;
+    background-color: #1ABC9C;
+    margin-top: 30px;
+}
+.last{
+    width: 1200px;
+    height: 400px;
+    margin: auto;
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+}
+.last .location{
+    width: 390px;
+    height: 400px;
+    background-color: purple;
+    text-align: center;
+}
+.location h2{
+    padding-top: 20px;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #fff;
+}
+.location p{
+    padding-top: 20px;
+    color: #fff;
+}
